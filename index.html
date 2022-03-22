@@ -1,0 +1,40 @@
+<!-- 1) Create a table displaying information about your car. 
+2) Add a button saying show image. 
+3) Upon clicking the show image, the image of a car should be displayed and log to the browser "My car is awesome" -->
+
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Practice One</title>
+        <script src="app.js" defer></script>
+    <style>
+        #imageShow{
+            display: none;
+        }
+    </style>
+    </head>
+    <body>
+        <h2>My Car Data</h2>
+        <table>
+            <tr>
+                <th>Make</th>
+                <td>Chevy</td>
+            </tr>
+            <tr>
+                <th>Model</th>
+                <td>Cruze 2013</td>
+            </tr>
+            <tr>
+                <th>Color</th>
+                <td>Red</td>
+            </tr>
+        </table>
+        <button type="button" id="btnShow">
+            Show Image
+        </button>
+        <button type="button" id="btnHide">
+            Hide Image
+        </button>
+        <img id="imageShow" src="images/car.jpg" alt="Image cannot be shown" height="200" width="300" />
+    </body>
+</html>
